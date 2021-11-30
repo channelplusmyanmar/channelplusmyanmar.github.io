@@ -1,0 +1,4 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^(?:www\.)domain\.com$ [NC]
+RewriteRule ^ https://channelplus.tastewp.com/%{REQUEST_URI} [L,R=301]
